@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-model = pickle.load(open("model (1).pkl", "rb"))
+model = pickle.load(open("model.pkl", "rb"))
 
 st.title("📊 Student Performance Predictor")
 
