@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("model (1).pkl", "rb"))
 
 st.title("📊 Student Performance Predictor")
 
@@ -17,5 +17,5 @@ input_df = pd.DataFrame([{
 }])
 
 if st.button("Predict"):
-    result = model.predict(input_df)[0]
+    result = model (1).predict(input_df)[0]
     st.success(f"Predicted Grade: {round(result,2)}")
