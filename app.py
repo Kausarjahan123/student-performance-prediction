@@ -17,5 +17,5 @@ input_df = pd.DataFrame([{
 }])
 
 if st.button("Predict"):
-    pred = model.predict(input_df)[0]
-    st.success(f"Predicted Grade: {pred:.2f}")
+    result = model.predict(input_df)[0]
+    st.success(f"Predicted Grade: {round(result,2)}")
